@@ -63,7 +63,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money Face" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fR-wp-79S">
-                                <rect key="frame" x="141" y="258" width="93" height="21"/>
+                                <rect key="frame" x="141.5" y="258" width="92.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Simely" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzZ-jV-RyO">
+                                <rect key="frame" x="122" y="298.5" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="birthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34i-Jw-zWF">
+                                <rect key="frame" x="129.5" y="339.5" width="116" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,14 +83,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="34i-Jw-zWF" firstAttribute="top" secondItem="mzZ-jV-RyO" secondAttribute="bottom" constant="20" id="DTd-hO-jMd"/>
                             <constraint firstItem="7fR-wp-79S" firstAttribute="top" secondItem="Tc3-6f-Ryl" secondAttribute="bottom" constant="23.5" id="LeV-2B-ywv"/>
                             <constraint firstItem="Tc3-6f-Ryl" firstAttribute="centerX" secondItem="lS6-Gc-kdx" secondAttribute="centerX" id="Phk-DA-79G"/>
                             <constraint firstItem="7fR-wp-79S" firstAttribute="centerX" secondItem="lS6-Gc-kdx" secondAttribute="centerX" id="T27-7b-joM"/>
                             <constraint firstItem="Tc3-6f-Ryl" firstAttribute="top" secondItem="OZW-3H-xqL" secondAttribute="bottom" constant="40" id="Y8C-GH-qFk"/>
+                            <constraint firstItem="34i-Jw-zWF" firstAttribute="centerX" secondItem="lS6-Gc-kdx" secondAttribute="centerX" id="YiO-O9-H3a"/>
+                            <constraint firstItem="mzZ-jV-RyO" firstAttribute="top" secondItem="7fR-wp-79S" secondAttribute="bottom" constant="20" id="l8d-dT-1VA"/>
+                            <constraint firstItem="mzZ-jV-RyO" firstAttribute="centerX" secondItem="lS6-Gc-kdx" secondAttribute="centerX" id="rth-Zy-ybO"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="DefinitionLabel" destination="7fR-wp-79S" id="iZ9-69-811"/>
+                        <outlet property="birthYearLabel" destination="34i-Jw-zWF" id="M8T-qU-P9e"/>
+                        <outlet property="categoryLabel" destination="mzZ-jV-RyO" id="g7I-Xa-0wB"/>
                         <outlet property="emojiLabel" destination="Tc3-6f-Ryl" id="ffi-WI-fob"/>
                     </connections>
                 </viewController>
